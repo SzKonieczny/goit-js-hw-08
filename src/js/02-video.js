@@ -9,7 +9,7 @@ player.on(
   throttle(data => {
     const currentTime = data.seconds;
     localStorage.setItem('videoplayer-current-time', currentTime);
-  }, 1000)
+  }, 5000)
 );
 
 const storedTime = localStorage.getItem('videoplayer-current-time');
